@@ -1,0 +1,179 @@
+.multi-flex {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+
+  margin-inline: auto;
+
+  @media (width <= 1480px) {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.cards {
+  margin-top: 500px;
+  background-color: #c1adce;
+}
+
+.card {
+  position: relative;
+
+  margin: 0 auto;
+
+  height: 360px;
+  width: 350px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #9478A7;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.circle {
+  background-color: #d7e6ec;
+
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  width: 80px;
+  height: 70px;
+
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #355674;
+  font-family: "Square Peg", cursive;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.overskriftCardUpper {
+  margin: 0 auto;
+  margin-top: 50px;
+
+  text-align: center;
+}
+
+.card-headheader {
+  color: white;
+  font-family: "Square Peg", cursive;
+  font-weight: 300;
+
+  font-size: 30px;
+}
+
+.card-head {
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 100;
+
+  font-size: 40px;
+}
+
+.card__img {
+  width: 100%;
+  height: 250px;
+  filter: hue-rotate(360deg);
+  transition: 700ms ease;
+
+  & :hover {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.card__body {
+  width: 50%;
+  padding: 1rem;
+}
+
+.card-overskrift {
+  font-size: 15px;
+  font-weight: 100;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+
+.card-text {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+}
+
+.card-pris {
+  font-size: 20px;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  margin-top: 10px;
+}
+
+.BTN-cards {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 0.4rem;
+  color: white;
+  width: 90%;
+  height: 40px;
+
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  border-radius: 2rem;
+
+  transition: 300ms ease;
+
+  margin-bottom: 100px;
+
+  &:hover {
+    background-color: var(--darkpurple);
+    color: white;
+  }
+}
+
+.BTN-cards a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 1140px) {
+  .cards {
+    margin-top: 700px;
+  }
+}
+
+@media (min-width: 1040px) {
+  .overskriftCardUpper {
+    flex: 0 0 100%;
+  }
+
+  .BTN-cards {
+    width: 30%;
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .overskriftCardUpper {
+    width: 100%;
+  }
+}
+
+

@@ -1,0 +1,52 @@
+.udtagelser-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 1.5rem;
+    gap: 1.5rem;
+
+    background-color: #FFFFFF;
+}
+
+.udtagelser-container h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #355674;
+
+    font-family: Square Peg, Regular;
+}
+
+.udtagelser-container h1 {
+    font-family: Quicksand, light;
+    margin: 0 0 1rem;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 300;
+    color: #355674;
+}
+
+.udtagelser {
+    width: 100%;
+    max-width: 700px;
+    padding: 2rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+
+    color: #355674;
+    font-family: Quicksand;
+}
+
+.udtagelser p:first-child {
+    margin: 0 0 1rem;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.udtagelser p:last-child {
+    margin: 0;
+    font-weight: 600;
+    color: #355674;
+}
