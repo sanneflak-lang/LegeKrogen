@@ -1,0 +1,44 @@
+.kundeklub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 4rem 1.5rem;
+    background-color: #D7E6EC;
+    color: #355674;
+}
+
+.kundeklub-container p {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.kundeklub-container h3 {
+    margin: 0.3rem 0 1.5rem;
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 400;
+}
+
+.kundeclub-BTN {
+    border: none;
+    background-color: #355674;
+    padding: 0.9rem 2rem;
+    transition: 0.3s ease;
+    border-radius: 50px;
+}
+
+.kundeclub-BTN a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.kundeclub-BTN:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
