@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <script src="index.js" type="module"></script>
+    <link rel="stylesheet" href="index.css" />
+
+    <title>Kundeklub | Legekrogen</title>
+  </head>
+  <body>
+    <div class="shipping-bar"></div>
+    <header class="header"></header>
+
+    <main>
+      <section class="kundeklub-page">
+         <h1>Bliv medlem af vores kundeklub</h1>
+
+        <form>
+          <form class="kundeklub-form">
+            <label for="name">Navn</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Dit navn"
+              required
+            />
+
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Din e-mail"
+              required
+            />
+
+            <label for="phone">Telefon</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Dit telefonnummer"
+              required
+            />
+
+            <label for="birthday">Fødselsdato</label>
+            <input type="date" id="birthday" name="birthday" />
+
+            <label for="message">Fortæl lidt om dig selv</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Skriv her..."
+              rows="5"
+            ></textarea>
+
+            <button type="submit" class="kundeklub-submit">
+              BLIV MEDLEM NU!
+            </button>
+          </form>
+        </form> 
+      </section>
+    </main>
+
+    <footer class="footer-container"></footer>
+  </body>
+</html>

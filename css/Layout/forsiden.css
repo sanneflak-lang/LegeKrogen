@@ -1,0 +1,254 @@
+/* =========================
+   FORSIDE
+========================= */
+
+main {
+  background-color: #ffffff;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+}
+
+
+/* =========================
+   SEKTIONSOVERSKRIFTER
+========================= */
+
+main h1 {
+  color: #355b7d;
+  font-weight: 400;
+}
+
+main h2 {
+  color: #355b7d;
+  font-weight: 400;
+}
+
+
+/* =========================
+   ANBEFALEDE PRODUKTER
+========================= */
+
+.recommended-products-list {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  padding: 70px 25px 100px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+
+/* Kortene */
+
+.recommended-products-list .card {
+  background-color: #ffffff;
+
+  border: 1.5px solid #d2d2d2;
+  border-radius: 28px;
+
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+
+  transition: transform 0.2s ease;
+}
+
+.recommended-products-list .card:hover {
+  transform: translateY(-5px);
+}
+
+
+/* Billeder */
+
+.recommended-products-list .card__img {
+  width: 100%;
+  height: 260px;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  margin-bottom: 20px;
+}
+
+
+/* Tekst */
+
+.recommended-products-list .card-overskrift {
+  color: #355b7d;
+  font-size: 24px;
+  margin: 0 0 8px;
+}
+
+.recommended-products-list .card-text {
+  color: #355b7d;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.recommended-products-list .card-pris {
+  color: #355b7d;
+  font-size: 20px;
+  margin-top: auto;
+}
+
+
+/* Knap */
+
+.recommended-products-list .BTN-cards {
+  width: 100%;
+  height: 55px;
+
+  border: none;
+  border-radius: 40px;
+
+  background-color: #355b7d;
+  color: white;
+
+  font-family: inherit;
+  font-size: 17px;
+
+  cursor: pointer;
+
+  margin-top: 20px;
+}
+
+.recommended-products-list .BTN-cards:hover {
+  background-color: #9877aa;
+}
+
+
+/* =========================
+   UDTAGELSER
+========================= */
+
+.udtagelser-container {
+  background-color: #f3e9f1;
+
+  padding: 90px 25px 110px;
+
+  text-align: center;
+}
+
+.udtagelser-container h3 {
+  color: #355b7d;
+
+  font-size: 24px;
+  font-weight: 400;
+
+  margin: 0 0 5px;
+}
+
+.udtagelser-container h1 {
+  color: #355b7d;
+
+  font-size: 48px;
+  font-weight: 300;
+
+  margin: 0 0 60px;
+}
+
+
+/* Reviews */
+
+.udtagelser {
+  max-width: 950px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.udtalelse {
+  background-color: white;
+
+  border-radius: 28px;
+
+  padding: 35px 30px;
+
+  border: 1px solid #d5d5d5;
+
+  text-align: left;
+}
+
+.udtalelse p:first-child {
+  color: #355b7d;
+
+  font-size: 18px;
+  line-height: 1.5;
+
+  margin: 0 0 25px;
+}
+
+.udtalelse p:last-child {
+  color: #9877aa;
+
+  font-size: 17px;
+
+  margin: 0;
+}
+
+
+/* =========================
+   MOBIL
+========================= */
+
+@media (max-width: 800px) {
+
+  .hero img {
+    height: 500px;
+  }
+
+  .recommended-products-list {
+    grid-template-columns: 1fr;
+
+    padding: 50px 20px 80px;
+
+    gap: 30px;
+  }
+
+  .recommended-products-list .card__img {
+    height: 280px;
+  }
+
+  .udtagelser-container {
+    padding: 70px 20px 90px;
+  }
+
+  .udtagelser-container h1 {
+    font-size: 40px;
+    margin-bottom: 45px;
+  }
+
+  .udtagelser {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .udtalelse {
+    padding: 30px 25px;
+  }
+
+}

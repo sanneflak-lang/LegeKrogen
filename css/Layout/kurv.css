@@ -1,0 +1,209 @@
+/* =========================
+   KURV
+========================= */
+
+.cart-section {
+  background-color: #ffffff;
+  padding: 70px 20px 100px;
+}
+
+.cart-section h1 {
+  color: #355b7d;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+
+
+/* Selve listen */
+
+.cart-list {
+  max-width: 900px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+/* Produktkort */
+
+.cart-card {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+
+  gap: 35px;
+
+  padding: 30px;
+
+  border: 1.5px solid #d1d1d1;
+  border-radius: 28px;
+
+  background-color: #ffffff;
+}
+
+
+/* Produktbillede */
+
+.cart-card img {
+  width: 180px;
+  height: 180px;
+
+  object-fit: cover;
+
+  border-radius: 20px;
+}
+
+
+/* Produktinfo */
+
+.cart-card h2 {
+  color: #355b7d;
+  font-size: 28px;
+  font-weight: 400;
+
+  margin: 0 0 10px;
+}
+
+.cart-card p {
+  color: #355b7d;
+  font-size: 18px;
+  line-height: 1.5;
+
+  margin: 8px 0;
+}
+
+
+/* Pris */
+
+.cart-card .card-pris {
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+
+/* =========================
+   ANTAL
+========================= */
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  margin-top: 20px;
+}
+
+.quantity button {
+  width: 38px;
+  height: 38px;
+
+  border: none;
+  border-radius: 50%;
+
+  background-color: #d9c3dc;
+  color: #355b7d;
+
+  font-size: 24px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.quantity button:hover {
+  background-color: #9a7bb2;
+  color: white;
+}
+
+.quantity span {
+  min-width: 25px;
+
+  text-align: center;
+
+  color: #355b7d;
+  font-size: 20px;
+}
+
+
+/* =========================
+   FJERN KNAP
+========================= */
+
+.remove-product {
+  margin-top: 20px;
+
+  border: none;
+  background: none;
+
+  color: #9a7bb2;
+
+  font-size: 16px;
+
+  cursor: pointer;
+
+  text-decoration: underline;
+}
+
+.remove-product:hover {
+  color: #355b7d;
+}
+
+
+/* =========================
+   TOM KURV
+========================= */
+
+.cart-list > p {
+  text-align: center;
+
+  color: #355b7d;
+
+  font-size: 24px;
+
+  padding: 80px 20px;
+}
+
+
+/* =========================
+   MOBIL
+========================= */
+
+@media (max-width: 700px) {
+
+  .cart-section {
+    padding: 50px 15px 80px;
+  }
+
+  .cart-section h1 {
+    font-size: 34px;
+    margin-bottom: 35px;
+  }
+
+  .cart-card {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    padding: 22px;
+
+    border-radius: 24px;
+  }
+
+  .cart-card img {
+    width: 100%;
+    height: 220px;
+  }
+
+  .cart-card h2 {
+    font-size: 25px;
+  }
+
+  .cart-card p {
+    font-size: 17px;
+  }
+
+}

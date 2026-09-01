@@ -1,0 +1,194 @@
+
+.faq-hero {
+  height: 650px;
+  background-image: url("../../assets/heros/FAQ.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-hero-box {
+  background-color: #C1ADCE95;
+  width: 100%;
+  max-width: 600px;
+  padding: 55px 30px;
+  text-align: center;
+  color: white;
+}
+
+.faq-hero-box p:first-child {
+  font-size: 38px;
+  margin: 0 0 5px;
+}
+
+.faq-hero-box h1 {
+  font-size: 58px;
+  font-weight: 300;
+  margin: 0 0 20px;
+}
+
+.faq-hero-box p:last-child {
+  font-size: 23px;
+  line-height: 1.35;
+  margin: 0;
+}
+
+.questions-section {
+  background-color: white;
+  padding: 70px 20px 100px;
+}
+
+.questions-list {
+  max-width: 540px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+
+/* FAQ kort */
+
+.question {
+  border: 2px solid #c8c8c8;
+  border-radius: 28px;
+  padding: 55px 60px;
+  background-color: white;
+}
+
+
+/* Spørgsmålet */
+
+.question button {
+  width: 100%;
+  border: none;
+  background: none;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  text-align: left;
+
+  color: #355b7d;
+  font-size: 28px;
+  font-family: inherit;
+
+  cursor: pointer;
+}
+
+
+
+/* Når FAQ'en er åben */
+
+.question.open button::after {
+  content: "⌃";
+}
+
+
+/* Svar */
+
+.question p {
+  margin: 40px 0 0;
+  padding-top: 35px;
+
+  border-top: 1px solid #d2d2d2;
+
+  color: #355b7d;
+  font-size: 24px;
+  line-height: 1.45;
+}
+
+
+
+
+.questions-list {
+    width: 90%;
+    max-width: 900px;
+    margin: 3rem auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.question {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+
+.question-button {
+    width: 100%;
+    padding: 1.5rem;
+
+    border: none;
+    background-color: white;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+
+    cursor: pointer;
+}
+
+ .question-icon {
+    font-size: 1.8rem;
+    transition: 300ms ease;
+}
+
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+
+    padding: 0 1.5rem;
+
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.6;
+
+    transition: max-height 300ms ease,
+                padding 300ms ease;
+}
+
+
+.answer.show {
+    max-height: 300px;
+    padding: 1.5rem;
+}
+
+
+.question-button.active .question-icon {
+    transform: rotate(45deg);
+}
+
+
+@media (max-width: 600px) {
+
+    .questions-list {
+        width: 92%;
+    }
+
+    .question-button {
+        padding: 1.2rem;
+        font-size: 0.95rem;
+        text-align: left;
+    }
+
+    .answer.show {
+        padding: 1.2rem;
+    }
+}
+
+
+
+ 

@@ -42,3 +42,256 @@
     transform: translateY(-2px);
     opacity: 0.9;
 }
+
+
+/* KUNDE KLUB SIDEN!!!!!!!!!!!!! */
+
+/* .kundeklub-page {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 4rem 1rem;
+
+    background-color: #d7e6ec;
+}
+
+
+.kundeklub-page h1 {
+    color: #355674;
+
+    font-family: "Square Peg", cursive;
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: 400;
+
+    text-align: center;
+
+    margin-bottom: 2.5rem;
+}
+
+
+.kundeklub-form {
+    width: 100%;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.6rem;
+
+    padding: 2.5rem;
+
+    background-color: white;
+
+    border-radius: 1.5rem;
+
+    box-shadow: 0 10px 30px rgba(53, 86, 116, 0.15);
+}
+
+
+.kundeklub-form label {
+    color: #355674;
+
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+
+    margin-top: 0.8rem;
+}
+
+
+.kundeklub-form input,
+.kundeklub-form textarea {
+    width: 100%;
+
+    padding: 0.9rem 1rem;
+
+    border: 1px solid #d7e6ec;
+    border-radius: 0.7rem;
+
+    background-color: #f8fbfc;
+
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+
+    outline: none;
+
+    transition: 300ms ease;
+}
+
+
+.kundeklub-form input:focus,
+.kundeklub-form textarea:focus {
+    border-color: #9478a7;
+
+    box-shadow: 0 0 0 3px rgba(148, 120, 167, 0.15);
+}
+
+
+.kundeklub-form textarea {
+    min-height: 120px;
+
+    resize: vertical;
+}
+
+
+.kundeklub-form input::placeholder,
+.kundeklub-form textarea::placeholder {
+    color: #8b8b8b;
+}
+
+
+.kundeklub-submit {
+    margin-top: 1.5rem;
+
+    padding: 0.9rem 1.5rem;
+
+    border: none;
+    border-radius: 2rem;
+
+    background-color: #355674;
+    color: white;
+
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 300ms ease;
+}
+
+
+.kundeklub-submit:hover {
+    background-color: #9478a7;
+
+    transform: translateY(-2px);
+}
+
+ */
+
+
+ /* =========================
+   KUNDEKLUB FORMULAR
+========================= */
+
+
+.kundeklub-page {
+  padding: 80px 25px 120px;
+  background-color: #ffffff;
+}
+
+.kundeklub-page h1 {
+  text-align: center;
+  color: #355b7d;
+  font-size: 42px;
+  font-weight: 400;
+  margin: 0 auto 70px;
+  max-width: 600px;
+}
+
+.kundeklub-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+
+/* Skjuler labels */
+.kundeklub-form label {
+  display: none;
+}
+
+
+/* Alle inputfelter */
+
+.kundeklub-form input,
+.kundeklub-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+
+  border: 2px solid #c8c8c8;
+  border-radius: 38px;
+
+  background-color: #fff;
+
+  padding: 20px 38px;
+
+  font-family: inherit;
+  font-size: 20px;
+  color: #355b7d;
+
+  outline: none;
+}
+
+
+/* Almindelige felter */
+
+.kundeklub-form input {
+  height: 75px;
+  margin-bottom: 38px;
+}
+
+
+/* Fødselsdato */
+
+.kundeklub-form input[type="date"] {
+  color: #b5b5b5;
+}
+
+
+/* Tekstfelt */
+
+.kundeklub-form textarea {
+  height: 290px;
+
+  border-radius: 38px;
+
+  resize: none;
+
+  margin-bottom: 45px;
+}
+
+
+/* Placeholder */
+
+.kundeklub-form input::placeholder,
+.kundeklub-form textarea::placeholder {
+  color: #bdbdbd;
+  opacity: 1;
+}
+
+
+/* Fokus */
+
+.kundeklub-form input:focus,
+.kundeklub-form textarea:focus {
+  border-color: #b9a3c5;
+}
+
+
+/* Knap */
+
+.kundeklub-submit {
+  display: block;
+
+  width: 92%;
+  height: 75px;
+
+  margin: 0 auto;
+
+  border: none;
+  border-radius: 50px;
+
+  background-color: #9877aa;
+  color: white;
+
+  font-family: inherit;
+  font-size: 21px;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+}
