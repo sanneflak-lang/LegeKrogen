@@ -58,8 +58,11 @@ if (questionsContainer) {
 
 
 const reviews = await fetchReviews();
+
+console.log("Reviews:", reviews);
+
 const reviewsContainer = document.querySelector(".udtagelser");
 
 if (reviewsContainer) {
-    renderReviews(reviews.data);
+  renderReviews(reviews.data);
 }

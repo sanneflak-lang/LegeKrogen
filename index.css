@@ -10,3 +10,226 @@
 @import url(css/Layout/faq.css);
 @import url(css/Layout/kurv.css);
 @import url(css/Layout/forsiden.css);
+
+
+
+
+/* =========================================
+   RESPONSIVE - COMPUTER
+   ========================================= */
+
+@media (min-width: 1024px) {
+
+  /* -------------------------
+     GENERELT
+     ------------------------- */
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+
+  /* -------------------------
+     HEADER
+     ------------------------- */
+
+  .MainNav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .mainNav-ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+  }
+
+  .burger {
+    display: none;
+  }
+
+
+  /* -------------------------
+     FORSIDE - SLIDER
+     ------------------------- */
+
+  .slider {
+    width: 100%;
+    height: 650px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide {
+    width: 100%;
+    height: 650px;
+    position: absolute;
+    inset: 0;
+  }
+
+  .sliderImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  /* -------------------------
+     FORSIDE - PRODUKTER
+     ------------------------- */
+
+  .cards {
+    padding: 100px 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .recommended-products-list {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+  }
+
+
+  /* -------------------------
+     PRODUKTSIDE
+     ------------------------- */
+
+  .products-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 30px;
+  }
+
+  .products-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+  }
+
+
+  /* -------------------------
+     PRODUKT CARDS
+     ------------------------- */
+
+  .card {
+    width: 100%;
+  }
+
+  .card__img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+
+  /* -------------------------
+     FAQ
+     ------------------------- */
+
+  .faq-hero {
+    height: 650px;
+  }
+
+  .faq-hero-box {
+    max-width: 600px;
+    padding: 60px 40px;
+  }
+
+  .questions-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 30px;
+  }
+
+
+  /* -------------------------
+     KUNDEKLUB
+     ------------------------- */
+
+  .kundeklub-container {
+    padding: 90px 30px;
+  }
+
+  .kundeklub-form {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+
+  /* -------------------------
+     KUNDEKLUB SIDE
+     ------------------------- */
+
+  .kundeklub-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 80px 30px;
+  }
+
+
+  /* -------------------------
+     KURV
+     ------------------------- */
+
+  .cart-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 30px;
+  }
+
+  .cart-card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .cart-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .cart-total {
+    text-align: right;
+    margin-top: 40px;
+  }
+
+
+  /* -------------------------
+     UDTALELSER
+     ------------------------- */
+
+  .udtagelser-container {
+    padding: 100px 40px;
+  }
+
+  .udtagelser {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+
+  /* -------------------------
+     FOOTER
+     ------------------------- */
+
+  .footer-container {
+    padding: 70px 40px;
+  }
+
+}

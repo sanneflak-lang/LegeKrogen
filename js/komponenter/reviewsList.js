@@ -1,5 +1,6 @@
 
 export function renderReviews(reviews) {
+    console.log("RENDER REVIEWS KØRER", reviews);
   const container = document.querySelector(".udtagelser");
   container.innerHTML = reviews
     .map((review) => {

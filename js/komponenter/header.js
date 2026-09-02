@@ -24,11 +24,7 @@ export function renderHeader() {
 
             <ul class="mainNav-ul">
 
-            <li class="mainNav-item">
-                <a href="index.html" class="mainNav-link">
-                    Forsiden
-                </a>
-            </li>
+         
                 <li class="mainNav-item">
                     <a href="products.html" class="mainNav-link">
                         Produkter

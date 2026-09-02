@@ -1,5 +1,7 @@
 export function renderQuestions(questions) {
+  console.log("RENDER QUESTIONS KØRER", questions);
   const container = document.querySelector(".questions-list");
+
 
   container.innerHTML = questions
     .map((question) => {

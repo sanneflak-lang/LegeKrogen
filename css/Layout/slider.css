@@ -14,8 +14,10 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: #c1adce82;
+  background-color: #82748c82;
   z-index: 2;
+
+  height: 500px;
 }
 
 .slide {
@@ -75,6 +77,8 @@
     color: white;
     background-color: #9478A7;
 }
+
+
 
 @media (min-width: 1140px) {
   .slider-container img{
